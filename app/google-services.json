@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "809047582086",
+    "project_id": "society-change",
+    "storage_bucket": "society-change.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:809047582086:android:1b878060254b087d5a7807",
+        "android_client_info": {
+          "package_name": "com.example.societychange"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "809047582086-r3jao9h7dbir4kge3oganf2mjd1svsa8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAe89uo4fZVMNXlxTjvZJ1z6k-5IUw-LeU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "809047582086-r3jao9h7dbir4kge3oganf2mjd1svsa8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

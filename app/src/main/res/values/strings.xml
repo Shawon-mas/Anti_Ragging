@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Society Change</string>
+    <string-array name="report">
+        <item>Bowling</item>
+        <item>Take id</item>
+        <item>Drugs</item>
+    </string-array>
+</resources>

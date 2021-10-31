@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/logintwwo"
+    android:id="@+id/drawer_layout"
+    tools:context=".HomePage">
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigation_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffff"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/nav_header"
+        app:menu="@menu/nav_menu"/>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/menuicon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/menu" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+            <TextView
+                android:gravity="center"
+                android:id="@+id/gallery"
+                android:layout_centerHorizontal="true"
+                android:textSize="40dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Gallery"
+                android:textColor="#000"
+                />
+
+            <com.smarteist.autoimageslider.SliderView
+                android:id="@+id/image_slider"
+                android:layout_width="match_parent"
+                android:layout_height="240dp"
+                android:layout_below="@id/gallery"
+                android:layout_marginTop="-2dp"
+                app:sliderAnimationDuration="600"
+                app:sliderAutoCycleDirection="back_and_forth"
+                app:sliderAutoCycleEnabled="true"
+                app:sliderIndicatorAnimationDuration="600"
+                app:sliderIndicatorGravity="center_horizontal"
+                app:sliderIndicatorMargin="15dp"
+                app:sliderIndicatorOrientation="horizontal"
+                app:sliderIndicatorPadding="3dp"
+                app:sliderIndicatorSelectedColor="#5A5A5A"
+                app:sliderIndicatorUnselectedColor="#FFF"
+                app:sliderScrollTimeInSec="2"
+                app:sliderStartAutoCycle="true"
+
+                />
+
+        </RelativeLayout>
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+           <TextView
+               android:textColor="#000"
+               android:id="@+id/report"
+               android:layout_centerHorizontal="true"
+               android:textSize="40dp"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Report Issue"
+               />
+           <TextView
+               android:layout_marginLeft="5dp"
+               android:layout_marginRight="5dp"
+               android:padding="10dp"
+               android:background="@drawable/affirecase"
+               android:drawableEnd="@drawable/spninner"
+               android:layout_below="@id/report"
+               android:textColor="#000"
+               android:id="@+id/select_report"
+               android:textSize="20dp"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:hint="Report Issue"
+               android:textColorHint="#000"
+               tools:ignore="RtlCompat" />
+           <EditText
+
+               android:padding="10dp"
+               android:layout_margin="5dp"
+               android:hint="Write down your issue "
+               android:textColorHint="#9C4606"
+               android:textColor="#9C4606"
+               android:id="@+id/reportbox"
+               android:textSize="20dp"
+               android:background="@drawable/affirecase"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_below="@id/select_report"/>
+           <TextView
+               android:layout_alignParentLeft="true"
+               android:id="@+id/imagetext"
+               android:textColor="#9C4606"
+               android:layout_margin="5dp"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_below="@id/reportbox"
+               android:text="Attached image "
+               android:textSize="20dp"
+               android:fontFamily="@font/adamina"/>
+
+
+           <ImageView
+
+               android:id="@+id/imagereport2"
+               android:layout_width="50dp"
+               android:layout_height="50dp"
+               android:layout_alignParentRight="true"
+               
+               android:layout_marginRight="-1dp"
+               android:clickable="true"
+               android:src="@drawable/image" />
+
+           <ImageView
+               android:visibility="invisible"
+               android:clickable="true"
+               android:layout_centerInParent="true"
+               android:id="@+id/imagereport"
+               android:layout_width="match_parent"
+               android:layout_height="200dp"
+               android:src="@drawable/image"
+               android:layout_below="@id/imagetext"/>
+
+           <EditText
+              android:visibility="invisible"
+               android:layout_margin="5dp"
+               android:padding="5dp"
+               android:hint="Drug Information "
+               android:textColorHint="#9C4606"
+               android:textColor="#9C4606"
+               android:id="@+id/drugreport"
+               android:textSize="20dp"
+               android:background="@drawable/affirecase"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_below="@id/takeidlink"/>
+           <EditText
+               android:visibility="invisible"
+               android:layout_margin="5dp"
+               android:padding="5dp"
+               android:hint="Report Your Issue "
+               android:textColorHint="#9C4606"
+               android:textColor="#9C4606"
+               android:id="@+id/takeidreport"
+               android:textSize="20dp"
+               android:background="@drawable/affirecase"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_below="@id/imagereport"/>
+           <EditText
+               android:visibility="invisible"
+               android:layout_margin="5dp"
+               android:padding="5dp"
+               android:hint="Convicted Social Link "
+               android:textColorHint="#9C4606"
+               android:textColor="#9C4606"
+               android:id="@+id/takeidlink"
+               android:textSize="20dp"
+               android:background="@drawable/affirecase"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_below="@id/takeidreport"/>
+           <Button
+               android:visibility="invisible"
+               android:layout_below="@id/drugreport"
+               android:layout_centerInParent="true"
+               android:id="@+id/report_button"
+               android:layout_width="200dp"
+               android:layout_height="wrap_content"
+               android:backgroundTint="#FFD600"
+               android:fontFamily="@font/adamina"
+               android:text="Report"
+               android:textColor="#000"
+               android:textSize="20dp" />
+
+
+
+       </RelativeLayout>
+
+    </LinearLayout>
+
+</ScrollView>
+
+</androidx.drawerlayout.widget.DrawerLayout>
+
+
+   

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/logintwwo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/wltxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/bevan"
+        android:layout_marginTop="200dp"
+        android:text="WELCOME"
+        android:textColor="#D3C9C1"
+        android:textSize="50dp" />
+    <RelativeLayout
+        android:layout_below="@+id/wltxt"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:layout_centerInParent="true"
+            android:id="@+id/bttn1"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#434242"
+            android:fontFamily="@font/adamina"
+            android:text="LOGIN "
+            android:textSize="20dp" />
+        <Button
+            android:layout_below="@id/bttn1"
+            android:layout_centerInParent="true"
+            android:id="@+id/bttn2"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#735744"
+            android:fontFamily="@font/adamina"
+            android:text="Register"
+            android:textSize="20dp" />
+        <Button
+            android:layout_below="@id/bttn2"
+            android:layout_centerInParent="true"
+            android:id="@+id/bttn3"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FF6D00"
+            android:fontFamily="@font/adamina"
+            android:text="Comunity"
+            android:textSize="20dp" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>
